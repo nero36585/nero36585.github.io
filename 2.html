@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://8-a.pp.ua/2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>проба</title>
+<link rel="stylesheet" crossorigin="anonymous" href="./проба_files/main.css"><script type="text/javascript" src="./проба_files/jquery-1.5.2.min.js.Без названия"></script>
+
+	</head>
+
+
+
+<body><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+  <tbody>
+    <tr>
+      <td valign="top">
+
+<div class="panel-pane pane-block pane-block-49">
+    <div class="pane-content">
+  
+<p style="font-family:Arial; font-size:1.2em; color:#0099ff; text-align:center;"><font color="#FF8C00"><span id="nameday">четвер</span>, <span id="day">3</span> <span id="namemonth">вересня</span> <span id="fullyear">2020 року</span></font><br>
+<font color="#FF8C00" size="24"><span id="time">19:12:04</span></font><br>	  
+<span id="numberurok">в цей момент</span>  <span id="numbersmena">уроків немає</span><br>
+від початку минуло: <font color="#FF8C00 "><span id="timeot">00:00</span></font><br>
+залишилось: <font color="#FF8C00 "><span id="timedo">00:00</span></font>    </p>
+<script language=JavaScript>
+<!--
+d0 = new Date('September 1, 2022');
+d2 = new Date('April 3, 2023');
+d1 = new Date();
+dt = (d1.getTime() - d0.getTime()) / (1000*60*60*24);
+df =(d2.getTime()-d1.getTime())/(1000*60*60*24);
+
+zn2 = new Date();
+zn3 = zn2.getMonth()+1;
+zn4 = zn2.getDate();
+zn5 =0;
+zn6 ="/";
+zn7 ="/";
+
+if (zn3 ==1) {
+  	if (zn4>=23 && zn4<=29) zn5=1;
+    if (zn4>=30 && zn4<=31) zn5=2;
+	}
+if (zn3 ==2) {
+	if (zn4>=1 && zn4<=5) zn5=2;
+    if (zn4>=6 && zn4<=12) zn5=1;
+	if (zn4>=13 && zn4<=19) zn5=2;
+    if (zn4>=20 && zn4<=26) zn5=1;
+	if (zn4>=27 && zn4<=28) zn5=2;
+	}	
+if (zn3 ==3) {
+	if (zn4>=1 && zn4<=5) zn5=2;
+    if (zn4>=6 && zn4<=12) zn5=1;
+	if (zn4>=13 && zn4<=19) zn5=2;
+    if (zn4>=20 && zn4<=26) zn5=1;
+	if (zn4>=27 && zn4<=31) zn5=2;
+	}	
+if (zn3 ==4) {
+	if (zn4>=1 && zn4<=9) zn5=2;
+    if (zn4>=10 && zn4<=16) zn5=1;
+	if (zn4>=17 && zn4<=23) zn5=2;
+    if (zn4>=24 && zn4<=30) zn5=1;
+	}	
+if (zn3 ==5) {
+	if (zn4>=1 && zn4<=7) zn5=2;
+    if (zn4>=8 && zn4<=14) zn5=1;
+	if (zn4>=15 && zn4<=21) zn5=2;
+    if (zn4>=22 && zn4<=28) zn5=1;
+	if (zn4>=29 && zn4<=31) zn5=2;
+	}
+if (zn3 ==6) {
+	if (zn4>=1 && zn4<=4) zn5=2;
+    if (zn4>=5 && zn4<=9) zn5=1;
+	}
+if (zn5 == 1) {
+zn6 ="ЧИСЕЛЬНИК";
+zn7 ="ЗНАМЕННИК";
+}
+if (zn5 == 2) {
+zn6 ="ЗНАМЕННИК";
+zn7 ="ЧИСЕЛЬНИК";
+}
+if (zn5 == 0) {
+zn6 ="без навчання";
+zn7 ="";
+}
+document.write('<p style="font-family:Arial; font-size:1.2em; color:#0099ff" align="center">Цей тиждень<br><B><font color="#FF8C00">'+zn6+'</font></B><br>Навчання триває <B><font color="#FF8C00">' 
++ Math.round(dt) + '</font></B> днів.' 
++'<br> до весняних канікул <B><font color="#FF8C00">' + Math.round(df) + '</font></B> днів.</p>');
+
+-->
+</script>  
+<script type="text/javascript">
+     
+      obj_namemonth=document.getElementById("namemonth"); 
+      obj_day=document.getElementById("day"); 
+      obj_nameday=document.getElementById("nameday"); 
+      obj_time=document.getElementById("time"); 
+      obj_numberurok=document.getElementById("numberurok");
+      obj_numbersmena=document.getElementById("numbersmena"); 
+      obj_fullyear=document.getElementById("fullyear"); 
+	  obj_timeot=document.getElementById("timeot"); 
+	  obj_timedo=document.getElementById("timedo"); 
+	   
+  
+  name_month=new Array ("січня","лютого","березня", "квітня","травня", "червня","липня","серпня","вересня","жовтня","листопада","грудня");
+  name_day=new Array ("неділя","понеділок", "вівторок","середа","четвер", "п'ятниця","субота");
+  function wr_hours()
+  {
+  time=new Date();
+      time_sec=time.getSeconds();
+      time_min=time.getMinutes();
+      time_hours=time.getHours();
+      time_wr=((time_hours<10)?"0":"")+time_hours;
+      time_wr+=":";
+      time_wr+=((time_min<10)?"0":"")+time_min;
+      time_wr+=":";
+      time_wr+=((time_sec<10)?"0":"")+time_sec;
+      flag_zan = "0"; 
+  
+  
+  
+  if (name_day[time.getDay()]=="тест")
+        {
+     	  u111="09:00:00";u112="09:40:00";
+      u121="09:45:00";u122="10:25:00";
+      u131="10:35:00";u132="11:15:00";
+      u141="11:20:00";u142="12:00:00";
+      u151="12:10:00";u152="12:50:00";
+      u161="12:55:00";u162="13:35:00";
+      u171="13:50:00";u172="14:30:00";
+      u211="14:35:00";u212="15:15:00";
+      u221="15:25:00";u222="16:05:00";
+      u231="16:10:00";u232="16:50:00";
+      u241="17:00:00";u242="17:40:00";
+      } 
+  
+   else 
+   {
+       u111="08:00:00";u112="08:45:00";
+      u121="08:50:00";u122="09:35:00";
+      u131="09:40:00";u132="10:25:00";
+      u141="10:35:00";u142="11:20:00";
+      u151="11:25:00";u152="12:10:00";
+      u161="12:15:00";u162="13:00:00";
+      u211="13:15:00";u212="14:00:00";
+      u221="14:05:00";u222="14:50:00";
+      u231="14:55:00";u232="15:40:00";
+      u241="15:45:00";u242="16:30:00";
+      u251="16:35:00";u252="17:20:00";
+	  u261="17:25:00";u262="18:10:00";
+      }
+    if (name_day[time.getDay()]=="неділя") {text= "в цей момент";smena="уроків немає";time_start="24:00:00"; time_fin=u111; flag_zan = "1";}
+	else if (name_day[time.getDay()]=="субота") {text= "в цей момент";smena="уроків немає";time_start="24:00:00"; time_fin=u111; flag_zan = "1";}
+	else if (time_wr>u111 && time_wr<u112){text= "триває 1-й урок";smena="1-ї зміни";time_start=u111;time_fin=u112;}
+    else if (time_wr>u112 && time_wr<u121){text= "триває перерва між 1-м і 2-м уроком";smena="1-ї зміни";time_start=u112;time_fin=u121;}
+    else if (time_wr>u121 && time_wr<u122){text= "триває 2-й урок";smena="1-ї зміни";time_start=u121;time_fin=u122;}
+    else if (time_wr>u122 && time_wr<u131){text= "триває перерва між 2-м і 3-м уроком";smena="1-ї зміни";time_start=u122;time_fin=u131;}
+    else if (time_wr>u131 && time_wr<u132){text= "триває 3-й урок";smena="1-ї зміни";time_start=u131;time_fin=u132;}
+    else if (time_wr>u132 && time_wr<u141){text= "триває перерва між 3-м і 4-м уроком";smena="1-ї зміни";time_start=u132;time_fin=u141;}
+    else if (time_wr>u141 && time_wr<u142){text= "триває 4-й урок";smena="1-ї зміни";time_start=u141;time_fin=u142;}
+    else if (time_wr>u142 && time_wr<u151){text= "триває перерва між 1 і 2 зміною";smena="";time_start=u142;time_fin=u151;}
+    else if (time_wr>u151 && time_wr<u152){text= "триває 1-й урок";smena="2-ї зміни";time_start=u151;time_fin=u152;}
+    else if (time_wr>u152 && time_wr<u161){text= "триває перерва між 1-м і 2-м уроком";smena="2-ї зміни";time_start=u152;time_fin=u161;}
+    else if (time_wr>u161 && time_wr<u162){text= "триває 2-й урок";smena="2-ї зміни";time_start=u161;time_fin=u162;}  
+	else if (time_wr>u162 && time_wr<u211){text= "триває перерва між 2-м і 3-м уроком";smena="2-ї зміни";time_start=u162;time_fin=u211;}
+	else if (time_wr>u211 && time_wr<u212){text= "триває 3-й урок";smena="2-ї зміни";time_start=u211;time_fin=u212;}
+    else if (time_wr>u212 && time_wr<u221){text= "триває перерва між 3-м і 4-м уроком";smena="2-ї зміни";time_start=u212;time_fin=u221;}
+    else if (time_wr>u221 && time_wr<u222){text= "триває 4-й урок";smena="2-ї зміни";time_start=u221;time_fin=u222;}
+    else if (time_wr>u222 && time_wr<u231){text= "триває перерва між 2 і 3 зміною";smena="";time_start=u222;time_fin=u231;}
+    else if (time_wr>u231 && time_wr<u232){text= "триває 1-й урок";smena="3-ї зміни";time_start=u231;time_fin=u232;}
+    else if (time_wr>u232 && time_wr<u241){text= "триває перерва між 1-м і 2-м уроком";smena="3-ї зміни";time_start=u232;time_fin=u241;}
+    else if (time_wr>u241 && time_wr<u242){text= "триває 2-й урок";smena="3-ї зміни";time_start=u241;time_fin=u242;}
+    else if (time_wr>u242 && time_wr<u251){text= "триває перерва між 2-м і 3-м уроком";smena="3-ї зміни";time_start=u242;time_fin=u251;}
+    else if (time_wr>u251 && time_wr<u252){text= "триває 3-й урок";smena="3-ї зміни";time_start=u251;time_fin=u252;}
+	else if (time_wr>u252 && time_wr<u261){text= "триває перерва між 3-м і 4-м уроком";smena="3-ї зміни";time_start=u252;time_fin=u261;}
+	else if (time_wr>u261 && time_wr<u262){text= "триває 4-й урок";smena="3-ї зміни";time_start=u261;time_fin=u262;}
+    else if (time_wr>u262){text= "в цей момент";smena="уроків немає";time_start=u262;time_fin="24:00:00"; flag_zan = "1";}
+    else if (time_wr<u111){text= "в цей момент";smena="уроків немає";time_start="00:00:00";time_fin=u111; flag_zan = "1";}  
+	
+    	// вычісленіе времені от начала урока ілі перемены
+		time_start_hh = time_start.substring(0,2);time_start_mm = time_start.substring(3,5);
+		start = new Date(time.getFullYear(),time.getMonth(),time.getDay(),time_start_hh,time_start_mm,0);
+		real = new Date(time.getFullYear(),time.getMonth(),time.getDay(),time.getHours(),time.getMinutes(),time.getSeconds());
+		date = (real.getTime() - start.getTime()) / (1000) ; time_real = Math.round(date);
+		min = Math.round((real.getTime()-start.getTime())/60000);
+		if (flag_zan == "1"){sec = "0"; min = "00";}
+		else if (time.getSeconds()<30) {sec = (real.getTime()-start.getTime())/1000-min*60;}
+		else {sec = (real.getTime()-start.getTime())/1000-min*60+60;min=min-1;}
+		sec=((sec<10)?"0":"")+sec; timeot = min + ":" + sec;
+		
+		// вычісленіе времені до окончанія урока ілі перемены
+		time_fin_hh = time_fin.substring(0,2);time_fin_mm = time_fin.substring(3,5);
+		fin = new Date(time.getFullYear(),time.getMonth(),time.getDay(),time_fin_hh,time_fin_mm,0); //осталось
+		real = new Date(time.getFullYear(),time.getMonth(),time.getDay(),time.getHours(),time.getMinutes(),time.getSeconds());
+		date = (-real.getTime() + fin.getTime()) / (1000) ; time_real = Math.round(date);
+		min = Math.round((-real.getTime()+fin.getTime())/60000);
+		if (flag_zan == "1"){sec = "0"; min = "00";}
+		else if (time.getSeconds()<30) {sec = (-real.getTime()+fin.getTime())/1000-min*60+60;min=min-1;}
+		else {sec = (-real.getTime()+fin.getTime())/1000-min*60;}
+		sec=((sec<10)?"0":"")+sec; timedo = min +":"+ sec;
+		
+		// вычісленіе колічесва дней до какого-лібо событія
+		ege = new Date(2013,10,10,9,0,0); //осталось до 1-тріместра
+		real = new Date();
+		dateege = (ege-real)/86400000-30; dateege = Math.round (dateege);
+	
+obj_namemonth.innerHTML=name_month[time.getMonth()]; 
+      obj_day.innerHTML=time.getDate(); 
+      obj_nameday.innerHTML=name_day[time.getDay()]; 
+      obj_time.innerHTML=time_wr; 
+      obj_numberurok.innerHTML=text; 
+      obj_numbersmena.innerHTML=smena; 
+      obj_fullyear.innerHTML=time.getFullYear()+" року";
+	  obj_timeot.innerHTML=timeot; 
+	  obj_timedo.innerHTML=timedo;
+	  	
+}
+      wr_hours();
+      setInterval("wr_hours();",1000);  
+	  </script>  </div>
+
+  
+  </div>
+
+  
+  </td>
+ 
+		
+    </tr>
+    
+  
+	</tbody>
+</table>
+	
+
+
+
+
+</body></html>
